@@ -21,6 +21,7 @@ public class CyperDemon extends Demon
     public int damage()
     {
         // put your code here
+        damageDone = random.nextInt(strength) + 1;
         return damageDone;
     }
 }

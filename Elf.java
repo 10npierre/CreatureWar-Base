@@ -25,7 +25,7 @@ public class Elf extends Creature
         percent = random.nextInt(10) + 1;
         damageDone = random.nextInt(strength) + 1;
         if (percent == 3) {
-            damageDone = strength *2;
+            damageDone = strength * 2;
         }
         return damageDone;
     }

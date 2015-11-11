@@ -16,11 +16,11 @@ public class Creature
    public Creature(){
        hp = 10;
        strength = 10;
-   }
+    }
     
    public int damage(){
        //TODO: change this
-       damageDone = random.nextInt(strength)+1;
+       damageDone = random.nextInt(strength) + 1;
        return damageDone;
     }
     

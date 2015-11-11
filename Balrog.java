@@ -18,9 +18,12 @@ public class Balrog extends Demon
         super();
     }
     
-    public int damage(int y)
+    public int damage()
     {
         // put your code here
+        int damageDone;
+        damageDone = random.nextInt(strength) + 1;
         return damageDone;
     }
+    
 }
