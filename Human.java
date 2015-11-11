@@ -17,6 +17,8 @@ public class Human extends Creature
     {
         // initialise instance variables
         super();
+        hp = 18;
+        strength = 30;
     }
 
     /**

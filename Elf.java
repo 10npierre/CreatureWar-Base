@@ -24,10 +24,15 @@ public class Elf extends Creature
      * @param  y   a sample parameter for a method
      * @return     the sum of x and y 
      */
-    public int damageDone()
+    public int magicalDamage()
     {
         // put your code here
+        int percent;
+        percent = random.nextInt(5) + 1;
         damageDone = random.nextInt(strength) + 1;
+        if (percent == 3) {
+            damageDone = strength *2;
+        }
         return damageDone;
     }
 }

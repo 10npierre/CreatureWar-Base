@@ -20,7 +20,6 @@ public class Creature
     
    public int damage(){
        //TODO: change this
-       int damageDone;
        damageDone = random.nextInt(strength)+1;
        return damageDone;
     }
