@@ -3,14 +3,15 @@ import java.util.Random;
 /**
  * Write a description of class Creature here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Nathan Pierre 
+ * @version 11/11/15
  */
 public class Creature
 {
-   private int hp;
-   private int strength;
-   private Random random;
+   public int hp;
+   public int strength;
+   public Random random;
+   public int damageDone;
    
    public Creature(){
        hp = 10;
