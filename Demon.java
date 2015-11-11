@@ -1,31 +1,31 @@
 
 /**
- * Write a description of class Elf here.
+ * A Demon creature that will be part of the battle
  * 
- * @author Nathan Pierre
+ * @author Nathan Pierre 
  * @version 11/11/15
  */
-public class Elf extends Creature
+public class Demon extends Creature
 {
     // instance variables - replace the example below with your own
 
     /**
-     * Constructor for objects of class Elf
+     * Constructor for objects of class Demon
      */
-    public Elf()
+    public Demon()
     {
         // initialise instance variables
         super();
     }
 
-    public int magicalDamage()
+    public int damage()
     {
         // put your code here
         int percent;
-        percent = random.nextInt(10) + 1;
+        percent = random.nextInt(5) + 1;
         damageDone = random.nextInt(strength) + 1;
         if (percent == 3) {
-            damageDone = strength *2;
+            damageDone = strength + 50;
         }
         return damageDone;
     }

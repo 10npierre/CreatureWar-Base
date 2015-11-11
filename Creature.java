@@ -24,4 +24,4 @@ public class Creature
        return damageDone;
     }
     
-}
+} 
