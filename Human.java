@@ -17,10 +17,12 @@ public class Human extends Creature
     {
         // initialise instance variables
         super();
-        hp = 30;
-        strength = 18;
     }
-
+    
+    public Human(int hitpoints, int stren) {
+        super(hitpoints, stren);
+    }
+    
     public int damage()
     {
         // put your code here

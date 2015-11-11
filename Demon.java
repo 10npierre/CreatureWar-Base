@@ -17,6 +17,10 @@ public class Demon extends Creature
         // initialise instance variables
         super();
     }
+    
+    public Demon(int hitpoints, int stren) {
+        super(hitpoints, stren);
+    }
 
     public int damage()
     {

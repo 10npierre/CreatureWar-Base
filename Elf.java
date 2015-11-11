@@ -17,7 +17,11 @@ public class Elf extends Creature
         // initialise instance variables
         super();
     }
-
+    
+    public Elf(int hitpoints, int stren) {
+        super(hitpoints, stren);
+    }
+    
     public int magicalDamage()
     {
         // put your code here

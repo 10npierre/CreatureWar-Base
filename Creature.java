@@ -8,14 +8,19 @@ import java.util.Random;
  */
 public class Creature
 {
-   public int hp = 10;
-   public int strength = 10;
+   public int hp;
+   public int strength;
    public Random random;
    public int damageDone;
    
    public Creature(){
        hp = 10;
        strength = 10;
+    }
+    
+   public Creature(int hp, int strength) {
+       this.hp = hp;
+       this.strength = strength;
     }
     
    public int damage(){
