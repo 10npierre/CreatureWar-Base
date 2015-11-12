@@ -1,9 +1,9 @@
 
 /**
- * Write a description of class Balrog here.
+ * A specific type of Demon which inherits from the demon object
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Nathan Pierre 
+ * @version 11/11/15
  */
 public class Balrog extends Demon
 {
@@ -18,15 +18,30 @@ public class Balrog extends Demon
         super();
     }
     
+    /**
+     * Method that creates the Balrog creature
+     * @param   hitpoints    the hitpoints for the Balrog must be between 10-25
+     * @param   stren        the strength for the Balrog must be between 5-20
+     */
     public Balrog(int hitpoints, int stren) {
         super(hitpoints, stren);
+        
+         if (hitpoints < 10 || hitpoints > 25 || stren < 5 || stren > 20) {
+             System.out.println("The number/numbers you typed in are not within the boundries");
+             throw new IllegalArgumentException();
+         }
     }
     
+    /**
+     * Method that calulates the damage the Balrog has done
+     * return    damageDone    the damage that has been done by the creature  
+     */
     public int damage()
     {
         // put your code here
-        int damageDone;
-        damageDone = random.nextInt(strength) + 1;
+        damageDone = super.damage();
+        damageDone += super.damage();
+        
         return damageDone;
     }
     

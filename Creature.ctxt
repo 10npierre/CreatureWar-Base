@@ -1,8 +1,11 @@
 #BlueJ class context
 comment0.params=
 comment0.target=Creature()
+comment0.text=\r\n\ Method\ which\ creates\ a\ creature\ and\ defaults\ the\ hp\ and\ strength\r\n
 comment1.params=hp\ strength
 comment1.target=Creature(int,\ int)
+comment1.text=\r\n\ Creates\ a\ creature\r\n\ @param\ \ \ hp\ \ \ \ the\ creatures\ hitpoints\r\n\ @param\ \ \ strength\ \ \ \ the\ creatures\ strength\r\n
 comment2.params=
 comment2.target=int\ damage()
+comment2.text=\r\n\ A\ method\ which\ calulates\ the\ damage\r\n\ return\ \ \ damageDone\ \ \ \ the\ damage\ that\ has\ been\ done\r\n
 numComments=3

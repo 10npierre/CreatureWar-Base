@@ -1,9 +1,9 @@
 
 /**
- * Write a description of class CyberDemon here.
+ * A type of Creature which inherits from the Demon object
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Nathan Pierre 
+ * @version 11/11/15
  */
 public class CyberDemon extends Demon
 {
@@ -18,20 +18,28 @@ public class CyberDemon extends Demon
         super();
     }
     
+    /**
+     * Method that creates the CyberDemon
+     * @param   hitpoints   the hitponts for the CyberDemon must be between 5-13
+     * @param   stren       the strength for the CyberDemon must be between 5-28
+     */
     public CyberDemon(int hitpoints, int stren) {
         super(hitpoints, stren);
+        
+         if (hitpoints < 5 || hitpoints > 13 || stren < 5 || stren > 28) {
+             System.out.println("The number/numbers you typed in are not within the boundries");
+             throw new IllegalArgumentException();
+         }
     }
-
+    
     /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
+     * Method that calculates the damage from the CyberDemon
+     * return damageDone   the damage that the creature has done
      */
     public int damage()
     {
         // put your code here
-        damageDone = random.nextInt(strength) + 1;
+        damageDone = super.damage();
         return damageDone;
     }
 }

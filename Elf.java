@@ -1,6 +1,6 @@
 
 /**
- * Write a description of class Elf here.
+ * An Elf that is a type of Creature and inherits from the creature object
  * 
  * @author Nathan Pierre
  * @version 11/11/15
@@ -18,18 +18,33 @@ public class Elf extends Creature
         super();
     }
     
+    /**
+     * Method that creates the Elf creature
+     * @param   hitpoints   hitpoints for the Elf must be between 3-20
+     * @param   stren       strength for the Elf must be between 10-15
+     */
     public Elf(int hitpoints, int stren) {
         super(hitpoints, stren);
+        
+        if (hitpoints < 3 || hitpoints > 20 || stren < 10 || stren > 15) {
+            System.out.println("The number/numbers you typed in are not within the boundries");
+            throw new IllegalArgumentException();
+        }
     }
     
+    /**
+     * Method that calculates the damage for the Elf
+     * return  damageDone   the damage that has been done by the Elf
+     */
     public int magicalDamage()
     {
         // put your code here
         int percent;
-        percent = random.nextInt(10) + 1;
-        damageDone = random.nextInt(strength) + 1;
+        percent = random.nextInt(10) + 1;  //10% chance statement that unables a different damage outcome
+        damageDone = super.damage();
         if (percent == 3) {
             damageDone = strength * 2;
+            System.out.println("WHAT A HIT!");
         }
         return damageDone;
     }
