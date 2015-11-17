@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.params=creatureNumber
+comment0.target=WarBattle(int)
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ WarBattle\r\n\ @param\ \ \ \ creatureNumber\ \ \ \ installes\ how\ many\ creature\ are\ being\ created\r\n
+numComments=1
