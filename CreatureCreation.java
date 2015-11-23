@@ -1,3 +1,5 @@
+import java.util.Random;
+import java.util.ArrayList;
 
 /**
  * Write a description of class CreatureCreation here.
@@ -8,15 +10,18 @@
 public class CreatureCreation
 {
     // instance variables - replace the example below with your own
-    private int x;
+    private Random random = new Random();
+    private ArrayList<Creature> army = new ArrayList<Creature>();
+    
 
     /**
      * Constructor for objects of class CreatureCreation
      */
-    public CreatureCreation()
+    public CreatureCreation(Creature human)
     {
         // initialise instance variables
-        x = 0;
+        army.add(human);
+        
     }
 
     /**
@@ -28,6 +33,6 @@ public class CreatureCreation
     public int sampleMethod(int y)
     {
         // put your code here
-        return x + y;
+        return y;
     }
 }

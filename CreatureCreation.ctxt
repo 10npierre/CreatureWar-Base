@@ -1,6 +1,6 @@
 #BlueJ class context
-comment0.params=
-comment0.target=CreatureCreation()
+comment0.params=human
+comment0.target=CreatureCreation(Creature)
 comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ CreatureCreation\r\n
 comment1.params=y
 comment1.target=int\ sampleMethod(int)
