@@ -41,4 +41,14 @@ public class Creature
        return damageDone;
     }
     
+   public void takeDamage(int attackDamage)
+   {
+       hp = hp - attackDamage;
+   }
+   
+   public boolean fallenCreature()
+   {
+       return hp > 0;
+   }
+    
 } 
