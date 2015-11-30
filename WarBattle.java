@@ -14,8 +14,8 @@ public class WarBattle
     private ArrayList<Creature> army2;
     private Random random = new Random();
     private CreatureCreation cCreation = new CreatureCreation();
-    private Creature oneCurrent;
-    private Creature twoCurrent;
+    private Creature currentCreature1;
+    private Creature currentCreature2;
     
 
     /**
@@ -36,32 +36,32 @@ public class WarBattle
     
     public Creature getOneCurrent() 
     {
-         return oneCurrent;
+         return currentCreature1;
     }
     
     public Creature getTwoCurrent()
     {
-        return twoCurrent;
+        return currentCreature2;
     }
     
     public void Battle()
     {
         while (army1.size() != 0 && army2.size() != 0) {
-            oneCurrent = army1.get(0);
-            twoCurrent = army2.get(0);
+            currentCreature1 = army1.get(0);
+            currentCreature2 = army2.get(0);
             
-            twoCurrent.takeDamage(oneCurrent.damage());
+            currentCreature2.takeDamage(currentCreature1.damage());
             
-            if (army2.size() > 1 && !twoCurrent.fallenCreature()) {
-                army2.remove(twoCurrent);
-                twoCurrent = army2.get(0);
+            if (army2.size() > 1 && !currentCreature2.fallenCreature()) {
+                army2.remove(currentCreature2);
+                currentCreature2 = army2.get(0);
             
             }
         
-            oneCurrent.takeDamage(twoCurrent.damage());
+            currentCreature1.takeDamage(currentCreature2.damage());
             
-            if (!oneCurrent.fallenCreature()) {
-                army1.remove(oneCurrent);
+            if (!currentCreature1.fallenCreature()) {
+                army1.remove(currentCreature1);
             }
         }
         
