@@ -47,7 +47,12 @@ public class Creature
    
    public boolean fallenCreature()
    {
-       return hp > 0;
+       boolean alive = true;
+       
+       if (hp <= 0) {
+           alive = false;
+        }
+       return alive;
    }
     
 } 

@@ -43,10 +43,10 @@ public class CreatureCreation
             case "cyberDemon":  madeCreature = new CyberDemon(random.nextInt((28 - 5) + 1) + 5, random.nextInt((13 - 5) + 1) + 5);
                                 break;
                                 
-            case "elf":         madeCreature = new Elf(random.nextInt((20 - 3) + 1) + 5, random.nextInt((15 - 10) + 1) + 10);
+            case "elf":         madeCreature = new Elf(random.nextInt((20 - 3) + 1) + 5, random.nextInt((15 - 10) + 1) + 5);
                                 break;
                                 
-            case "balrog":      madeCreature = new Balrog(random.nextInt((25 - 10) + 1) + 10, random.nextInt((10 - 5) + 1) + 14);
+            case "balrog":      madeCreature = new Balrog(random.nextInt((25 - 10) + 1) + 10, random.nextInt((10 - 5) + 1) + 5);
                                 break;
             
             default:             madeCreature = null;
