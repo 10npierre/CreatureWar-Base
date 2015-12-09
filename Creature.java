@@ -10,7 +10,7 @@ public class Creature
 {
    public int hp;
    public int strength;
-   public Random random;
+   public Random random = new Random();
    public int damageDone;
    
    /**
