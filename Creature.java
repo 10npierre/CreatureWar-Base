@@ -27,7 +27,7 @@ public class Creature
      * @param   strength    the creatures strength
      */
    public Creature(int hitpoints, int strength) {
-       hitpoints = hp;
+       hp = hitpoints;
        this.strength = strength;
     }
    

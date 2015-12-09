@@ -70,6 +70,8 @@ public class WarBattle
             }
             
             System.out.println("Side two has " +army2.size()+ " creatures remaining");
+            System.out.println(army1.size());
+            System.out.println(army1.size());
         }
         
         if (army1.size() == 0) {

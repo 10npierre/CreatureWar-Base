@@ -1,3 +1,4 @@
+import java.util.Random;
 
 /**
  * A Demon creature that will be part of the battle
@@ -8,7 +9,8 @@
 public class Demon extends Creature
 {
     // instance variables - replace the example below with your own
-
+   private Random random = new Random();
+   
     /**
      * Constructor for objects of class Demon
      */
@@ -35,6 +37,7 @@ public class Demon extends Creature
     {
         // put your code here
         int percent = 0;
+        percent = random.nextInt(20);
         damageDone = super.damage();
         if (percent == 3) {
             damageDone = strength + 50;
