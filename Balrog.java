@@ -25,11 +25,6 @@ public class Balrog extends Demon
      */
     public Balrog(int hitpoints, int stren) {
         super(hitpoints, stren);
-        
-         if (hitpoints < 10 || hitpoints > 25 || stren < 5 || stren > 20) {
-             System.out.println("The number/numbers you typed in are not within the boundries");
-             throw new IllegalArgumentException();
-         }
     }
     
     /**

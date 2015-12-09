@@ -26,8 +26,8 @@ public class Creature
      * @param   hp    the creatures hitpoints
      * @param   strength    the creatures strength
      */
-   public Creature(int hp, int strength) {
-       this.hp = hp;
+   public Creature(int hitpoints, int strength) {
+       hitpoints = hp;
        this.strength = strength;
     }
    
@@ -36,7 +36,6 @@ public class Creature
     * return   damageDone    the damage that has been done
     */
    public int damage(){
-       //TODO: change this
        damageDone = random.nextInt(strength) + 1;
        return damageDone;
     }

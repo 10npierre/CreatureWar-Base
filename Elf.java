@@ -25,11 +25,6 @@ public class Elf extends Creature
      */
     public Elf(int hitpoints, int stren) {
         super(hitpoints, stren);
-        
-        if (hitpoints < 3 || hitpoints > 20 || stren < 10 || stren > 15) {
-            System.out.println("The number/numbers you typed in are not within the boundries");
-            throw new IllegalArgumentException();
-        }
     }
     
     /**

@@ -25,11 +25,6 @@ public class Demon extends Creature
      */
     public Demon(int hitpoints, int stren) {
         super(hitpoints, stren);
-        
-        if (hitpoints < 5 || hitpoints > 15 || stren < 5 || stren > 25) {
-            System.out.println("The number/numbers you typed in are not within the boundries");
-            throw new IllegalArgumentException();
-        }
     }
     
     /**
@@ -39,8 +34,7 @@ public class Demon extends Creature
     public int damage()
     {
         // put your code here
-        int percent;
-        percent = random.nextInt(20) + 1;  //statement that creates a 5% chance of a certain outcome for the damage
+        int percent = 0;
         damageDone = super.damage();
         if (percent == 3) {
             damageDone = strength + 50;

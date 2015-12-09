@@ -25,11 +25,6 @@ public class CyberDemon extends Demon
      */
     public CyberDemon(int hitpoints, int stren) {
         super(hitpoints, stren);
-        
-         if (hitpoints < 5 || hitpoints > 13 || stren < 5 || stren > 28) {
-             System.out.println("The number/numbers you typed in are not within the boundries");
-             throw new IllegalArgumentException();
-         }
     }
     
     /**

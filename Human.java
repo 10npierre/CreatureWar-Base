@@ -25,13 +25,7 @@ public class Human extends Creature
      * @param  stren       strength for the human must be from 5-30
      */
     public Human(int hitpoints, int stren) {
-        super(hitpoints, stren);
-        
-        //lets the user know if there within the boundry specifies or not
-        if (hitpoints < 5 || hitpoints > 18 || stren < 5 || stren > 30) {
-            System.out.println("The number/numbers you typed in are not within the boundry");
-            throw new IllegalArgumentException();
-        }  
+        super(hitpoints, stren);        
    }
    
     /**
