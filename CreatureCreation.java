@@ -12,7 +12,6 @@ public class CreatureCreation
     // instance variables - replace the example below with your own
     private Random random = new Random();
     private ArrayList<String> army = new ArrayList<String>();
-    
 
     /**
      * Constructor for objects of class CreatureCreation
@@ -38,16 +37,16 @@ public class CreatureCreation
         int numberIndex = random.nextInt(army.size());
         String creation = army.get(numberIndex);
         switch (creation) {
-            case "human":       madeCreature = new Human(random.nextInt((18-5)+ 1) + 5, random.nextInt((30 - 5) + 1) + 5 );
+            case "human":       madeCreature = new Human(random.nextInt((30-5) + 1) + 5, random.nextInt((18 - 5) + 1) + 5);
                                 break;
                              
-            case "cyberDemon":  madeCreature = new CyberDemon(random.nextInt((13 - 5) + 1) + 5, random.nextInt((28 - 5) + 1) + 5);
+            case "cyberDemon":  madeCreature = new CyberDemon(random.nextInt((28 - 5) + 1) + 5, random.nextInt((13 - 5) + 1) + 5);
                                 break;
                                 
-            case "elf":         madeCreature = new Elf(random.nextInt((20 - 3) + 1) + 3, random.nextInt((15 - 10) + 1) + 10);
+            case "elf":         madeCreature = new Elf(random.nextInt((20 - 3) + 1) + 5, random.nextInt((15 - 10) + 1) + 10);
                                 break;
                                 
-            case "balrog":      madeCreature = new Balrog(random.nextInt((25 - 10) + 1) + 10, random.nextInt((20 - 5) + 1) + 5);
+            case "balrog":      madeCreature = new Balrog(random.nextInt((25 - 10) + 1) + 10, random.nextInt((10 - 5) + 1) + 14);
                                 break;
             
             default:             madeCreature = null;

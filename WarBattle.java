@@ -51,6 +51,7 @@ public class WarBattle
             currentCreature2 = army2.get(0);
             
             currentCreature2.takeDamage(currentCreature1.damage());
+            System.out.println(currentCreature1.getClass().getSimpleName()+ " attacks " +currentCreature2.getClass().getSimpleName());
             
             if (army2.size() > 1 && !currentCreature2.fallenCreature()) {
                 army2.remove(currentCreature2);
@@ -59,6 +60,7 @@ public class WarBattle
             }
         
             currentCreature1.takeDamage(currentCreature2.damage());
+            System.out.println(currentCreature2.getClass().getSimpleName()+ " attacks " +currentCreature1.getClass().getSimpleName());
             
             if (!currentCreature1.fallenCreature()) {
                 army1.remove(currentCreature1);
