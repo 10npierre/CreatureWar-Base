@@ -46,6 +46,8 @@ public class WarBattle
     
     public void Battle()
     {
+        System.out.println("--------------------------");
+        System.out.println("LET THE WAR BEGIN!!!!!");
         while (army1.size() != 0 && army2.size() != 0) {
             currentCreature1 = army1.get(0);
             currentCreature2 = army2.get(0);
@@ -58,13 +60,16 @@ public class WarBattle
                 currentCreature2 = army2.get(0);
             
             }
-        
+            System.out.println("Side one has " +army1.size()+ " creatures remaining");
+           
             currentCreature1.takeDamage(currentCreature2.damage());
             System.out.println(currentCreature2.getClass().getSimpleName()+ " attacks " +currentCreature1.getClass().getSimpleName());
             
             if (!currentCreature1.fallenCreature()) {
                 army1.remove(currentCreature1);
             }
+            
+            System.out.println("Side two has " +army2.size()+ " creatures remaining");
         }
         
         if (army1.size() == 0) {
